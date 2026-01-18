@@ -19,6 +19,14 @@ public class RozkladPodstawowy implements IRozklad {
 		this.linie = linie;
 	}
 
+	public int getId() {
+		return this.id;
+	}
+
+	public List<Integer> getLinie() {
+		return this.linie;
+	}
+
 	public int getTyp() {
 		return this.typ;
 	}

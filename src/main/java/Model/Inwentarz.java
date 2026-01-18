@@ -15,8 +15,13 @@ public class Inwentarz {
 
 	public Inwentarz(IDAO dao) {
 		this.dao = dao;
-		this.linie = this.dao.dajWszytskieLinie();
-		this.rozklady = this.dao.dajWszystkieRozklady();
+		try {
+			this.linie = this.dao.dajWszystkieLinie();
+			this.rozklady = this.dao.dajWszystkieRozklady();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
 		// Pomijam reszte list, ktore nie sa potrzebne dla tego przypadku uzycia
 	}
 
@@ -55,6 +60,10 @@ public class Inwentarz {
 	public void dodajRozklad(String rozklad) {
 		System.out.println("\nModel.Inwentarz()"); 
         System.out.println("✓ dodajRozklad():");
+		if (rozklad == null) {
+			System.err.println("Podane dane są puste");
+			return;
+		}
 		String[] parametry = rozklad.split(";");
 		System.out.print("--- przeslane parametry rozkladu: Id: " + parametry[0] + ", Typ: " + parametry[1] + ", dataOd: " + parametry[2] + ", czestotliwosc: " + parametry[3] + ", linie: " + parametry[4].replace("-", ", "));
 		if (parametry[1].equals("2")) {
@@ -64,8 +73,21 @@ public class Inwentarz {
 			System.out.println(" typSwieta: " + parametry[5]);
 		}
 		IFabrykaRozkladu fabrykaRozkladu = new FabrykaRozkladu();
-		IRozklad stworzonyRozklad = fabrykaRozkladu.utworzRozklad(rozklad);
-		this.rozklady.add(stworzonyRozklad);
-		this.dao.dodajRozklad(stworzonyRozklad);
+		IRozklad stworzonyRozklad = null;
+		try {
+			stworzonyRozklad = fabrykaRozkladu.utworzRozklad(rozklad);
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			return;
+		}
+
+		if (stworzonyRozklad == null) {
+			System.err.println("Rozkład nie mógł zostać dodany");
+			return;
+		} else {
+			this.rozklady.add(stworzonyRozklad);
+			this.dao.dodajRozklad(stworzonyRozklad);
+		}
+
 	}
 }

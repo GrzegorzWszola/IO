@@ -1,0 +1,52 @@
+WARNING: A Java agent has been loaded dynamically (/home/grzegorz/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 1, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2 typSwieta: Wigilia
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: Wigilia
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 1, Typ: 2, dataOd: 01.13.2026, czestotliwosc: 5, linie: 1, 2 czasKoncaIStartu: 1.0-2.0
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+Text '01.13.2026' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 13
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 1, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- utworzono rozkład podstawowy:
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 1, Typ: 4, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+Nieznany typ rozkładu: 4
+Rozkład nie mógł zostać dodany
+
+Model.Inwentarz()
+✓ dodajRozklad():
+Podane dane są puste
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 1, Typ: 2, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2 czasKoncaIStartu: 1.0-2.0
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():

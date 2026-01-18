@@ -4,10 +4,21 @@ public class FabrykaRozkladuNocnego implements IFabrykaRozkladu {
 	private IRozklad rozklad;
 
 	public FabrykaRozkladuNocnego(IRozklad rozklad) {
-		throw new UnsupportedOperationException();
+		this.rozklad = rozklad;
 	}
 
 	public IRozklad utworzRozklad(String dane) {
-		throw new UnsupportedOperationException();
+		String[] czasy = dane.split("-");
+		String czasStartu = czasy[0];
+		String czasKonca = czasy[1];
+		float czasStartuFloat = 0;
+		float czasKoncaFloat = 0;
+		try{
+			czasStartuFloat = Float.parseFloat(czasStartu);
+			czasKoncaFloat = Float.parseFloat(czasKonca);
+		} catch (NumberFormatException e){
+			System.err.println("Error: " + e.getMessage());
+		}
+		return new RozkladNocny(rozklad, czasStartuFloat, czasKoncaFloat);
 	}
 }

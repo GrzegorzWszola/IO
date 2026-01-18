@@ -52,7 +52,7 @@ public class DodawanieNowychRozkladowJazdy {
         System.out.println("✓ wprowadzParametryRozkladu():");
 		System.out.println("--- wprowadzone parametry:Id: 1, Typ: 3 (swiateczny), dataOd: 01.01.2026, czestotliwoscPrzejazdów: 5 (5 razy dziennie)");
 		// Hardcodowane wprowadzenie danych dla testu
-		return "1;3;01.01.2026;5";
+		return "1;3;1;5";
 	}
 
 	/**

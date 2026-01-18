@@ -1,0 +1,1 @@
+DAO BŁĄD ODCZYTU Z PLIKU nie_ma_mnie.csv: nie_ma_mnie.csv (No such file or directory)

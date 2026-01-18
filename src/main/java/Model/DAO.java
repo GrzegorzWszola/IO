@@ -15,10 +15,19 @@ import java.util.List;
  */
 public class DAO implements IDAO {
 
-	private static final String PLIK_LINIE = "data/linie.csv";
-    private static final String PLIK_PRZYSTANKI = "data/przystanki.csv";
-    private static final String PLIK_TRASY = "data/trasy.csv";
-    private static final String PLIK_ROZKLADY = "data/rozklady.csv";
+	private String PLIK_LINIE = "data/linie.csv";
+    private String PLIK_PRZYSTANKI = "data/przystanki.csv";
+    private String PLIK_TRASY = "data/trasy.csv";
+    private String PLIK_ROZKLADY = "data/rozklady.csv";
+
+	public DAO(){}
+
+	public DAO(String sciezka_linie, String sciezka_przystanki, String sciezka_trasy, String sciezka_rozklady){
+		this.PLIK_LINIE = sciezka_linie;
+		this.PLIK_PRZYSTANKI = sciezka_przystanki;
+		this.PLIK_TRASY = sciezka_trasy;
+		this.PLIK_ROZKLADY = sciezka_rozklady;
+	}
 
 	public Linia znajdzLinie(int nrLinii) {
 		throw new UnsupportedOperationException();
@@ -27,22 +36,18 @@ public class DAO implements IDAO {
 	/**
 	 * funkcja zwracajaca wszystkie linie zapisane 
 	 */
-	public List<Linia> dajWszytskieLinie() {
+	public List<Linia> dajWszystkieLinie() {
 		List<String> rezultat = odczytajZPliku(PLIK_LINIE);
 		List<Linia> wynik = new ArrayList<>();
 		for (String linia : rezultat){
 			String[] parametry = linia.split(";");
 			String[] trasyString = parametry[2].trim().split("-");
 			List<Integer> idTras = new ArrayList<>();
-			try {
-				for (String id : trasyString){
-					idTras.add(Integer.parseInt(id));
-				}
-
-				wynik.add(new Linia(Integer.parseInt(parametry[0]), parametry[1], idTras));
-			} catch (NumberFormatException e){
-				System.out.println("Error not an integer");
+			for (String id : trasyString){
+				idTras.add(Integer.parseInt(id));
 			}
+
+			wynik.add(new Linia(Integer.parseInt(parametry[0]), parametry[1], idTras));
 		}
 		
 		return wynik;
@@ -57,34 +62,30 @@ public class DAO implements IDAO {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 		for (String rozklad : rezultat) {
 			String[] parametry = rozklad.split(";");
-			try {
-				Integer id = Integer.parseInt(parametry[0]);
-				Integer typ = Integer.parseInt(parametry[1]);
-				Integer czestotliwosc = Integer.parseInt(parametry[2]);
-				LocalDate dataOd = LocalDate.parse(parametry[3].trim(), formatter);
-				String[] idLinii = parametry[4].split("-");
-				List<Integer> linie = new ArrayList<>();
-				for (String linia : idLinii){
-					linie.add(Integer.parseInt(linia));
-				}
+			Integer id = Integer.parseInt(parametry[0]);
+			Integer typ = Integer.parseInt(parametry[1]);
+			Integer czestotliwosc = Integer.parseInt(parametry[2]);
+			LocalDate dataOd = LocalDate.parse(parametry[3].trim(), formatter);
+			String[] idLinii = parametry[4].split("-");
+			List<Integer> linie = new ArrayList<>();
+			for (String linia : idLinii){
+				linie.add(Integer.parseInt(linia));
+			}
 
-				IRozklad rozkladPodstawowy = new RozkladPodstawowy(id, typ, dataOd, czestotliwosc, linie);
-				switch (typ) {
-					case 1:
-						wynik.add(rozkladPodstawowy);
-						break;
-					case 2:
-						String[] podzialCzasow = parametry[5].split("-");
-						Float czasStartu = Float.parseFloat(podzialCzasow[0]);
-						Float czasKonca = Float.parseFloat(podzialCzasow[1]);
-						wynik.add(new RozkladNocny(rozkladPodstawowy, czasStartu, czasKonca));
-						break;
-					case 3:
-						wynik.add(new RozkladSwiateczny(rozkladPodstawowy, parametry[5]));
-						break;
-				}
-			} catch (NumberFormatException e){
-				System.out.println("Error: " + e.getMessage());
+			IRozklad rozkladPodstawowy = new RozkladPodstawowy(id, typ, dataOd, czestotliwosc, linie);
+			switch (typ) {
+				case 1:
+					wynik.add(rozkladPodstawowy);
+					break;
+				case 2:
+					String[] podzialCzasow = parametry[5].split("-");
+					Float czasStartu = Float.parseFloat(podzialCzasow[0]);
+					Float czasKonca = Float.parseFloat(podzialCzasow[1]);
+					wynik.add(new RozkladNocny(rozkladPodstawowy, czasStartu, czasKonca));
+					break;
+				case 3:
+					wynik.add(new RozkladSwiateczny(rozkladPodstawowy, parametry[5]));
+					break;
 			}
 		}
 		

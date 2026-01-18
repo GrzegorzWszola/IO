@@ -16,7 +16,7 @@ public interface IDAO {
 
 	public void dodajLinie(Linia linia);
 
-	public List<Linia> dajWszytskieLinie();
+	public List<Linia> dajWszystkieLinie();
 
 	public List<IRozklad> dajWszystkieRozklady();
 

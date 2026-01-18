@@ -1,6 +1,7 @@
 package Model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public abstract class DekoratorRozkladu implements IRozklad {
 	protected IRozklad rozklad;
@@ -8,17 +9,20 @@ public abstract class DekoratorRozkladu implements IRozklad {
 	public DekoratorRozkladu(IRozklad rozklad) {
 		this.rozklad = rozklad;
 	}
-	public Linia[] getLinie() {
-		throw new UnsupportedOperationException();
+	public int getId() {
+		return this.rozklad.getId();
+	}
+	public List<Integer> getLinie() {
+		return this.rozklad.getLinie();
 	}
 	public int getTyp() {
-		throw new UnsupportedOperationException();
+		return this.rozklad.getTyp();
 	}
 	public LocalDate getDataOd() {
-		throw new UnsupportedOperationException();
+		return this.rozklad.getDataOd();
 	}
 	public int getCzestotliwoscPrzejazdow() {
-		throw new UnsupportedOperationException();
+		return this.rozklad.getCzestotliwoscPrzejazdow();
 	}
 
 	public abstract String opisz();

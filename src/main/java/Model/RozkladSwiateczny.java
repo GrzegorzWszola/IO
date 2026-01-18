@@ -1,6 +1,7 @@
 package Model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class RozkladSwiateczny extends DekoratorRozkladu {
 	private String typSwieta;
@@ -15,19 +16,8 @@ public class RozkladSwiateczny extends DekoratorRozkladu {
         return rozklad.opisz() + ";" + typSwieta;
 	}
 	
-	public Linia[] getLinie() {
-		throw new UnsupportedOperationException();
-	}
-
-	public int getTyp() {
-		throw new UnsupportedOperationException();
-	}
-
-	public LocalDate getDataOd() {
-		throw new UnsupportedOperationException();
-	}
-
-	public int getCzestotliwoscPrzejazdow() {
-		throw new UnsupportedOperationException();
+	@Override
+	public String getTypSwieta() {
+		return this.typSwieta;
 	}
 }
