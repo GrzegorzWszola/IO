@@ -1,3 +1,4 @@
+package Model;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.LocalDate;
@@ -8,10 +9,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
-import Model.FabrykaRozkladu;
-import Model.IFabrykaRozkladu;
-import Model.IRozklad;
 
 @Tag("PU08")
 public class FabrykaRozkladuTest {
@@ -40,6 +37,7 @@ public class FabrykaRozkladuTest {
     }
 
     @Test
+    @Tag("RozkladSwiateczny")
     @DisplayName("Sukces dodawanie rozkładu świątecznego")
     void dodajRozkladSwiateczny() {
         // Jeśli
@@ -101,6 +99,7 @@ public class FabrykaRozkladuTest {
     }
 
     @Test
+    @Tag("RozkladSwiateczny")
     @DisplayName("Ddodawanie rozkładu światęcznego, gdzie w danych nie świeto jest niepoprawne")
     void tworzenieRozkladuSwiatecznegoBezSwieta() {
         // Jeśli

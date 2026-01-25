@@ -42,5 +42,6 @@ public class KontrolerKierownikaRuchu implements IKontrolerKierownikaRuchu{
 		System.out.println("\nKontroler.KontrolerKierownikaRuchu()"); 
         System.out.println("✓ dodawanieNowychRozkladowJazdy():");
 		DodawanieNowychRozkladowJazdy pu08 = new DodawanieNowychRozkladowJazdy(this.model);
+		pu08.dodajRozklad();
 	}
 }

@@ -1,5 +1,6 @@
 package Kontroler;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PrzekazanieInformacjiUzytkownikowi {
@@ -8,7 +9,7 @@ public class PrzekazanieInformacjiUzytkownikowi {
 		System.out.println(informacja);
 	}
 
-	public static void wyswietlAktualneLinie(List<String> aktualneLinieKomunikacyjne) {
+	public static List<String> wyswietlAktualneLinie(List<String> aktualneLinieKomunikacyjne) {
 		System.out.println("\nKontroler.PrzekazanieInformacjiUzytkownikowi()"); 
         System.out.println("✓ wyswietlAktualneLinie():");
 		System.out.println("\n=============================================");
@@ -17,7 +18,7 @@ public class PrzekazanieInformacjiUzytkownikowi {
 		
 		if (aktualneLinieKomunikacyjne == null || aktualneLinieKomunikacyjne.isEmpty()) {
 			System.out.println("Brak dostępnych linii do wyświetlenia.");
-			return;
+			return null;
 		}
 
 		// Nagłówek dla czytelności
@@ -34,5 +35,10 @@ public class PrzekazanieInformacjiUzytkownikowi {
 				parametry[2].replace("-", ", "));
 		}
 		System.out.println("=============================================");
+
+		List<String> listaWybranychLinii = new ArrayList<>();
+		listaWybranychLinii.add("1"); listaWybranychLinii.add("2");
+
+		return listaWybranychLinii;
 	}
 }

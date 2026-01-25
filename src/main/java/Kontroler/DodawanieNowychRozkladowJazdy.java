@@ -18,9 +18,11 @@ public class DodawanieNowychRozkladowJazdy {
 		System.out.println("--- Rozpoczęto realizację PU dodawanie nowych rozkładów.");
 		this.model = model;
 		this.aktualneLinieKomunikacyjne = model.znajdzWszystkieLinie(); 
+	}
+
+	public void dodajRozklad() {
 		this.rozklad = wprowadzParametryRozkladu();
-		PrzekazanieInformacjiUzytkownikowi.wyswietlAktualneLinie(aktualneLinieKomunikacyjne);
-		this.listaLiniiDlaRozkladu = wybierzLinieDlaRozkladu(aktualneLinieKomunikacyjne);
+		this.listaLiniiDlaRozkladu = PrzekazanieInformacjiUzytkownikowi.wyswietlAktualneLinie(aktualneLinieKomunikacyjne);
 		if (this.listaLiniiDlaRozkladu.size() > 0){
 			rozklad += ";";
 			for(String linia : listaLiniiDlaRozkladu){
@@ -36,6 +38,7 @@ public class DodawanieNowychRozkladowJazdy {
 		} else {
 			// Przekaz error do uzytkownika
 			PrzekazanieInformacjiUzytkownikowi.przekazanieInformacjiUzytkownikowi("Error: Lista linii jest pusta");
+			return;
 		}
 
 		if (rozklad != null){
@@ -52,7 +55,8 @@ public class DodawanieNowychRozkladowJazdy {
         System.out.println("✓ wprowadzParametryRozkladu():");
 		System.out.println("--- wprowadzone parametry:Id: 1, Typ: 3 (swiateczny), dataOd: 01.01.2026, czestotliwoscPrzejazdów: 5 (5 razy dziennie)");
 		// Hardcodowane wprowadzenie danych dla testu
-		return "1;3;1;5";
+
+		return "1;3;01.01.2026;5";
 	}
 
 	/**
@@ -77,19 +81,5 @@ public class DodawanieNowychRozkladowJazdy {
 		String czasStartuIKonca = "12.00-06.00";
 		System.out.println("--- wprowadzonyTypSwieta: " + czasStartuIKonca);
 		return czasStartuIKonca;
-	}
-
-	/**
-	 * Funkcja odpowiedzialna za wybranie przez uzytkownika linii w danym rozkladzie
-	 * @return dane do rozkladu
-	 */
-	public List<String> wybierzLinieDlaRozkladu(List<String> aktualneLinieKomunikacyjne) {
-		System.out.println("\nKontroler.DodawanieNowychRozkladowJazdy()"); 
-        System.out.println("✓ wprowadzParametryRozkladu():");
-		System.out.println("--- wybrane linie: 1, 2");
-		List<String> wynik = new ArrayList<>();
-		wynik.add("1"); wynik.add("2");
-		
-		return wynik;
 	}
 }

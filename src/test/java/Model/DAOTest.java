@@ -1,5 +1,4 @@
-import Model.*;
-
+package Model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -55,6 +54,7 @@ class DAOTest {
     }
 
     @Test
+    @Tag("RozkladSwiateczny")
     @DisplayName("Dodanie wszystkich typów rozkładów")
     void testDajWszystkieRozklady_RozneTypy() throws IOException {
         // Jeśli

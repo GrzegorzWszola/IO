@@ -1,0 +1,14 @@
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: 1Listopada
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: Wigilia

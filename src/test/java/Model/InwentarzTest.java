@@ -1,3 +1,4 @@
+package Model;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
@@ -7,12 +8,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
-import Model.IDAO;
-import Model.IRozklad;
-import Model.Inwentarz;
-import Model.RozkladNocny;
-import Model.RozkladSwiateczny;
 
 @Tag("PU08")
 public class InwentarzTest {
