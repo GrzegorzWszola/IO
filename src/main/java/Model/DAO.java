@@ -92,6 +92,12 @@ public class DAO implements IDAO {
 		return wynik;
 	}
 
+	public List<Pojazd> dajWszystkiePojazdy()
+	{
+		List pojazdy = List.of(new Pojazd("BUS-01", "Wolny"), new Pojazd("BUS-02", "Zajety"));
+		return pojazdy;
+	}
+
 	public Pojazd znajdzPojazd(int nrPojazdu) {
 		throw new UnsupportedOperationException();
 	}

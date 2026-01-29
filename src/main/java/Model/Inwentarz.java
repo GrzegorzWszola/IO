@@ -18,6 +18,7 @@ public class Inwentarz {
 		try {
 			this.linie = this.dao.dajWszystkieLinie();
 			this.rozklady = this.dao.dajWszystkieRozklady();
+			this.pojazdy = this.dao.dajWszystkiePojazdy();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -40,11 +41,15 @@ public class Inwentarz {
 		return this.linie;
 	}
 
+	public void dodajPojazd(Pojazd nowyPojazd) {
+		this.pojazdy.add(nowyPojazd);
+	}
+
 	public List<Przystanek> getPrzystanki() {
 		throw new UnsupportedOperationException();
 	}
 	public List<Pojazd> getPojazdy() {
-		throw new UnsupportedOperationException();
+		return pojazdy;
 	}
 	public List<Kierowca> getKierowcy() {
 		throw new UnsupportedOperationException();
@@ -52,6 +57,18 @@ public class Inwentarz {
 	public List<IRozklad> getRozklady() {
 		throw new UnsupportedOperationException();
 	}
+
+    /**
+     * Zwraca status pojazdu (Wolny / Zajety) na podstawie jego ID
+     */
+    public String dajStatusPojazdu(String idPojazdu) {
+        for (Pojazd pojazd : pojazdy) {
+            if (pojazd.getId().equals(idPojazdu)) {
+                return pojazd.getStatusPojazdu();
+            }
+        }
+        return "Nieznany pojazd";
+    }
 
 	/**
 	 * funkcja odpowiedzialna za dodawanie rozkladow do pamieci

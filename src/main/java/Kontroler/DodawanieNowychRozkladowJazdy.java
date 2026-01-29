@@ -29,10 +29,9 @@ public class DodawanieNowychRozkladowJazdy {
 				rozklad += linia + "-";
 			}
 			rozklad = rozklad.substring(0, rozklad.length() - 1);
-			if (rozklad.split(";")[1].equals("3")){
+			if (rozklad.split(";")[1].equals("3") && !rozklad.split(";")[1].isEmpty()){
 				rozklad += ";" + wprowadzTypSwieta();
-			}
-			if (rozklad.split(";")[1].equals("2")){
+			} else if (rozklad.split(";")[1].equals("2") && !rozklad.split(";")[1].isEmpty()){
 				rozklad += ";" + wprowadzCzasStartuIKonca();
 			}
 		} else {

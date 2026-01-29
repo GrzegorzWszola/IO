@@ -1,15 +1,22 @@
 package Model;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 import java.util.ArrayList;
-
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
-@Tag("PU08")
+@TestMethodOrder(OrderAnnotation.class)
 public class InwentarzTest {
     private IDAO daoMock;
     private Inwentarz inwentarz;
@@ -19,6 +26,12 @@ public class InwentarzTest {
         // Tworzymy mock(atrape) DAO
         daoMock = mock(IDAO.class);
         // Ustawienie co maja robic metody atrapy
+        ArrayList<Pojazd> testowePojazdy = new ArrayList<>();
+        testowePojazdy.add(new Pojazd("BUS-01", "Wolny"));
+        testowePojazdy.add(new Pojazd("BUS-02", "Zajety"));
+
+        // Programujemy mocka
+        when(daoMock.dajWszystkiePojazdy()).thenReturn(testowePojazdy);
         when(daoMock.dajWszystkieRozklady()).thenReturn(new ArrayList<>());
         when(daoMock.dajWszystkieLinie()).thenReturn(new ArrayList<>());
         // Tworzymy inwentarz z atrapą dao
@@ -26,6 +39,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Załadowanie danych z dao przy starcie")
     void załadujDaneZDao() {
         // Sprawdza czy mock DAO został wywołany chociaż raz
@@ -34,6 +48,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Dodanie nowego rozkładu podstawowego")
     void tworzenieRozkladuPodstawowego() {
         // Jeśli
@@ -47,6 +62,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Dodanie nowego rozkładu świątecznego")
     void tworzenieRozkladuSwiateczne() {
         // Jeśli
@@ -60,6 +76,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Dodanie nowego rozkładu nocnego")
     void tworzenieNowegoRozkladuNocnego() {
         // Jeśli
@@ -73,6 +90,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Niedodanie rozkladu przez niepoprawny typ")
     void tworzenieNowegoRozkladuNiepoprawnyTyp() {
         // Jeśli
@@ -85,6 +103,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Niedodanie rozkładu bo zła data")
     void tworzenieNowegoRozkladuNiepoprawnaData() {
         // Jeśli
@@ -97,6 +116,7 @@ public class InwentarzTest {
     }
 
     @Test
+    @Tag("PU08")
     @DisplayName("Podanie null jako parametr rozkład")
     void podanieNullNaParametr() {
         // Jeśli

@@ -1,0 +1,9 @@
+---
+Suite
+---
+!contents -R2 -g -p -f -h
+
+"Testowanie akceptacyjne systemu zarzadzania komunikacja miejska"
+
+!path /home/grzegorz/Desktop/IO/Projekto/target/classes
+!path /home/grzegorz/Desktop/IO/Projekto/target/test-classes

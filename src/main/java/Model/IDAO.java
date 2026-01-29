@@ -20,6 +20,8 @@ public interface IDAO {
 
 	public List<IRozklad> dajWszystkieRozklady();
 
+	public List<Pojazd> dajWszystkiePojazdy();
+
 	public void dodajPrzystanek(Przystanek przystanek);
 
 	public void dodajTrase(Trasa trasa);

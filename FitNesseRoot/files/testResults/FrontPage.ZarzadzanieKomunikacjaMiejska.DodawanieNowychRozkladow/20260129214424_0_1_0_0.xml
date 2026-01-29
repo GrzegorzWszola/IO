@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20251025</FitNesseVersion>
+  <rootPath>FrontPage.ZarzadzanieKomunikacjaMiejska.DodawanieNowychRozkladow</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>4</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <date>2026-01-29T21:44:25+01:00</date>
+    <runTimeInMillis>64</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.ZarzadzanieKomunikacjaMiejska.SetUp"&gt;.FrontPage.ZarzadzanieKomunikacjaMiejska.SetUp&lt;/a&gt; &lt;a href="FrontPage.ZarzadzanieKomunikacjaMiejska.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;testyFitnesse.SetUp&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="9"&gt;testyFitnesse.testDodanieNowegoRozkladu&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;id&lt;/td&gt;
+		&lt;td&gt;typ&lt;/td&gt;
+		&lt;td&gt;dataOd&lt;/td&gt;
+		&lt;td&gt;czestotliwosc&lt;/td&gt;
+		&lt;td&gt;typSwieta&lt;/td&gt;
+		&lt;td&gt;czasNocny&lt;/td&gt;
+		&lt;td&gt;dodajNowyRozklad?&lt;/td&gt;
+		&lt;td&gt;dajLiczbeRozkladow?&lt;/td&gt;
+		&lt;td class="error"&gt;zawieraPrawidlowyRozklad?&lt;hr/&gt; &lt;span class="fit_label"&gt;Could not find method: zawieraPrawidlowyRozklad?.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;20&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;null&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;true &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr&gt;false &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;1 &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr&gt;3 &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException: Cannot invoke "fit.Binding.doCell(fit.Fixture, fit.Parse)" because "this.columnBindings[column]" is null
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:121)
+	at fit.Fixture.interpretTables(Fixture.java:107)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+		&lt;td&gt;Wigilia&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;null&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;true &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr&gt;false &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;2 &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr&gt;4 &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.lang.NullPointerException: Cannot invoke "fit.Binding.doCell(fit.Fixture, fit.Parse)" because "this.columnBindings[column]" is null
+	at fit.ColumnFixture.doCell(ColumnFixture.java:32)
+	at fit.Fixture.doCells(Fixture.java:174)
+	at fit.Fixture.doRow(Fixture.java:168)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:21)
+	at fit.Fixture.doRows(Fixture.java:162)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:13)
+	at fit.Fixture.doTable(Fixture.java:156)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:121)
+	at fit.Fixture.interpretTables(Fixture.java:107)
+	at fit.Fixture.doTables(Fixture.java:81)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DodawanieNowychRozkladow</relativePageName>
+  </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 2, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 20, linie: 1, 2
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 2, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 20, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- utworzono rozkład podstawowy:
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 3, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 30, linie: 1, 2 typSwieta: Wigilia
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 3, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 30, linie: 1, 2 typSwieta: Wigilia
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: Wigilia
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>64</totalRunTimeInMillis>
+</testResults>
+

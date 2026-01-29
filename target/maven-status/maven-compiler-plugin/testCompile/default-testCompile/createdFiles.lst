@@ -1,0 +1,11 @@
+SuitePU08.class
+SuiteTworzenieSwiatecznego.class
+testyFitnesse/SetUp.class
+Kontroler/DodawanieNowychRozkladowTest.class
+Kontroler/SuiteKontroler.class
+testyFitnesse/testDodanieNowegoRozkladu.class
+Model/DAOTest.class
+testyFitnesse/testDodanieNowegoRozkladu$1.class
+Model/SuiteModel.class
+Model/InwentarzTest.class
+Model/FabrykaRozkladuTest.class

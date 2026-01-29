@@ -2,6 +2,16 @@
 Model.FabrykaRozkladu()
 ✓ dodajRozklad():
 
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+Nieznany typ rozkładu: 4
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
 Model.FabrykaRozkladuSwiatecznego()
 ✓ utworzRozklad():
 --- utworzony rozklad ze swietem: 1Listopada
@@ -12,3 +22,19 @@ Model.FabrykaRozkladu()
 Model.FabrykaRozkladuSwiatecznego()
 ✓ utworzRozklad():
 --- utworzony rozklad ze swietem: Wigilia
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- utworzono rozkład podstawowy:
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():

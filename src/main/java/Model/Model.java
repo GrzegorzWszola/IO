@@ -31,11 +31,16 @@ public class Model implements IModel {
         System.out.println("✓ zapiszRozklad():");
 		String[] parametry = rozklad.split(";");
 		System.out.print("--- przeslane parametry rozkladu: Id: " + parametry[0] + ", Typ: " + parametry[1] + ", dataOd: " + parametry[2] + ", czestotliwosc: " + parametry[3] + ", linie: " + parametry[4].replace("-", ", "));
-		if (parametry[1].equals("2")) {
-			System.out.println(" czasKoncaIStartu: " + parametry[5]);
-		}
-		if (parametry[1].equals("3")) {
-			System.out.println(" typSwieta: " + parametry[5]);
+		try {
+			if (parametry[1].equals("2")) {
+				System.out.println(" czasKoncaIStartu: " + parametry[5]);
+			}
+			if (parametry[1].equals("3")) {
+				System.out.println(" typSwieta: " + parametry[5]);
+			}
+		} catch (Exception e) {
+			System.out.println("Brak parametru dla danego typu");
+			return;
 		}
 
 		this.inwentarz.dodajRozklad(rozklad);

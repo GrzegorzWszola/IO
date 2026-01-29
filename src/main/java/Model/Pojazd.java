@@ -1,15 +1,19 @@
 package Model;
 
 public class Pojazd {
-	private int nrPojazdu;
-	private int typ;
-	private int status;
+    private String id;
+    private String status;
 
-	public Pojazd(int nPojazdu, int typ, int status) {
-		throw new UnsupportedOperationException();
-	}
+    public Pojazd(String id, String status) {
+        this.id = id;
+        this.status = status;
+    }
 
-	public String opisz() {
-		throw new UnsupportedOperationException();
-	}
+    public String getId() {
+        return id;
+    }
+
+    public String getStatusPojazdu() {
+        return status;
+    }
 }

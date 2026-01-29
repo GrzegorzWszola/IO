@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20251025</FitNesseVersion>
+  <rootPath>RerunLastFailures_FrontPage-ZarzadzanieKomunikacjaMiejska-DodawanieNowychRozkladow</rootPath>
+  <date>2026-01-29T21:33:18+01:00</date>
+  <pageHistoryLink>RerunLastFailures_FrontPage-ZarzadzanieKomunikacjaMiejska-DodawanieNowychRozkladow?pageHistory&amp;resultDate=20260129213318</pageHistoryLink>
+  <pageHistoryReference>
+    <name>FrontPage.ZarzadzanieKomunikacjaMiejska.DodawanieNowychRozkladow</name>
+    <date>2026-01-29T21:33:18+01:00</date>
+    <pageHistoryLink>FrontPage.ZarzadzanieKomunikacjaMiejska.DodawanieNowychRozkladow?pageHistory&amp;resultDate=20260129213318</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>57</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>java -cp /home/grzegorz/Desktop/IO/Projekto/target/classes:/home/grzegorz/Desktop/IO/Projekto/target/test-classes:/home/grzegorz/Desktop/IO/Projekto/fitnesse-standalone.jar fit.FitServer grzegorz-Inspiron-15-3520 35315 3863</command>
+    <exitCode>5</exitCode>
+    <stdOut>--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 2, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 20, linie: 1, 2
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 2, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 20, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- utworzono rozkład podstawowy:
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 3, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 30, linie: 1, 2 typSwieta: Wigilia
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 3, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 30, linie: 1, 2 typSwieta: Wigilia
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: Wigilia
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>468</totalRunTimeInMillis>
+</suiteResults>
+

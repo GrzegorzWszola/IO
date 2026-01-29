@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20251025</FitNesseVersion>
+  <rootPath>FrontPage.ZarzadzanieKomunikacjaMiejska.DodawanieNowychRozkladow</rootPath>
+  <result>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2026-01-30T01:10:02+01:00</date>
+    <runTimeInMillis>105</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.ZarzadzanieKomunikacjaMiejska.SetUp"&gt;.FrontPage.ZarzadzanieKomunikacjaMiejska.SetUp&lt;/a&gt; &lt;a href="FrontPage.ZarzadzanieKomunikacjaMiejska.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;testyFitnesse.SetUp&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="9"&gt;testyFitnesse.testDodanieNowegoRozkladu&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;id&lt;/td&gt;
+		&lt;td&gt;typ&lt;/td&gt;
+		&lt;td&gt;dataOd&lt;/td&gt;
+		&lt;td&gt;czestotliwosc&lt;/td&gt;
+		&lt;td&gt;typSwieta&lt;/td&gt;
+		&lt;td&gt;czasNocny&lt;/td&gt;
+		&lt;td&gt;dodajNowyRozklad?&lt;/td&gt;
+		&lt;td&gt;zawieraPrawidlowyRozklad?&lt;/td&gt;
+		&lt;td&gt;pokazRozklad?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;20&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;2;1;20;01.01.2026;1-2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+		&lt;td&gt;Wigilia&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;3;3;30;01.01.2026;1-2;Wigilia&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;Wigilia&lt;/td&gt;
+		&lt;td&gt;12.0-6.0&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="pass"&gt;null&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;Wigilia&lt;/td&gt;
+		&lt;td&gt;12.0-6.0&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;5;3;8;01.01.2026;1-2;Wigilia&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;6&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;Wigilia&lt;/td&gt;
+		&lt;td&gt;12.0-6.0&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;6;2;5;01.01.2026;1-2;12.0-6.0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;4&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;Wigilia&lt;/td&gt;
+		&lt;td&gt;12.0-6.0&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;4;1;5;01.01.2026;1-2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;01.01.2026&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td&gt;/&lt;/td&gt;
+		&lt;td class="pass"&gt;/&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="pass"&gt;null&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DodawanieNowychRozkladow</relativePageName>
+  </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>java -cp /home/grzegorz/Desktop/IO/Projekto/target/classes:/home/grzegorz/Desktop/IO/Projekto/target/test-classes:/home/grzegorz/Desktop/IO/Projekto/fitnesse-standalone.jar fit.FitServer grzegorz-Inspiron-15-3520 34331 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut>--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 2, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 20, linie: 1, 2
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 2, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 20, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- utworzono rozkład podstawowy:
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 3, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 30, linie: 1, 2 typSwieta: Wigilia
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 3, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 30, linie: 1, 2 typSwieta: Wigilia
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: Wigilia
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 4, Typ: /, dataOd: /, czestotliwosc: 5, linie: 1, 2
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 4, Typ: /, dataOd: /, czestotliwosc: 5, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 5, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 8, linie: 1, 2 typSwieta: Wigilia
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 5, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 8, linie: 1, 2 typSwieta: Wigilia
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: Wigilia
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 6, Typ: 2, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2 czasKoncaIStartu: 12.0-6.0
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 6, Typ: 2, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2 czasKoncaIStartu: 12.0-6.0
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 4, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 4, Typ: 1, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+--- utworzono rozkład podstawowy:
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+
+Model.Inwentarz()
+✓ dajWszystkieLinie():
+--- Znalezione linie
+--- id: 1 nazwa: 19 idTras: 1, 2
+--- id: 2 nazwa: 20 idTras: 2, 3
+
+Kontroler.PrzekazanieInformacjiUzytkownikowi()
+✓ wyswietlAktualneLinie():
+
+=============================================
+ AKTUALNE LINIE KOMUNIKACYJNE
+=============================================
+NR LINII | NAZWA      | ID TRAS
+--------------------------------------------
+1        | 19         | 1, 2
+2        | 20         | 2, 3
+=============================================
+
+Model.Model()
+✓ zapiszRozklad():
+--- przeslane parametry rozkladu: Id: 8, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2 typSwieta: /
+
+Model.Inwentarz()
+✓ dodajRozklad():
+--- przeslane parametry rozkladu: Id: 8, Typ: 3, dataOd: 01.01.2026, czestotliwosc: 5, linie: 1, 2 typSwieta: /
+
+Model.FabrykaRozkladu()
+✓ dodajRozklad():
+
+Model.FabrykaRozkladuSwiatecznego()
+✓ utworzRozklad():
+--- utworzony rozklad ze swietem: /
+</stdOut>
+    <stdErr>For input string: "/"
+Nazwa święta nie mogą zawierać cyfr
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>515</totalRunTimeInMillis>
+</testResults>
+

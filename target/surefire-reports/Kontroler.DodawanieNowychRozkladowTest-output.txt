@@ -4,3 +4,7 @@ WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicA
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 --- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
+--- Rozpoczęto realizację PU dodawanie nowych rozkładów.
